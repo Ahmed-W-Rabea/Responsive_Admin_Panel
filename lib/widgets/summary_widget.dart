@@ -8,7 +8,8 @@ class SummaryWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
+    return Container(
+      color: const Color(0xFF171821),
       child: const Column(
         children: [
           SizedBox(
@@ -23,10 +24,12 @@ class SummaryWidget extends StatelessWidget {
             height: 16,
           ),
           Padding(
-            padding:  EdgeInsets.all(20),
+            padding: EdgeInsets.all(20),
             child: SummaryDetails(),
           ),
-          SizedBox(height: 40,),
+          SizedBox(
+            height: 40,
+          ),
           Scheduled(),
         ],
       ),
